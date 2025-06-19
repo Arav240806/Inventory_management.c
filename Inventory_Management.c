@@ -15,13 +15,9 @@ char buisness_type[50];
 Item item;
 printf("Welcome to the Inventory Management System\n");
 printf("Enter Buisness Name:\n");
-scanf("%s",&buisness_name);
+scanf("%s",buisness_name);
 printf("Enter Buisness Type(Manufacturers/Distributors)\n");
-scanf("%s",&buisness_type);
-printf("Enter choice to add products\n");
-int choice;
-printf("Enter choice\n");
-scanf("%d",&choice);
+scanf("%s",buisness_type);
 printf("Product name\n");
 scanf("%s",item.product_name);
 
@@ -36,12 +32,12 @@ scanf("%d",&item.Quantity);
 printf("Product price\n");
 scanf("%d",&item.price);
 
-if(item.Quantity>0)
+if(item.Quantity<=0)
 {
-printf("Available");
+printf("Not Available\n");
 }
 else{
-printf("Not Available");
+printf("Available\n");
 }
 
 
